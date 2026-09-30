@@ -6,6 +6,7 @@ name = "Armored Core: Master of Arena"
 id = "SLUS-01030"
 players = 2
 exe = "disc/SLUS_010.30"
+disc = "disc/Armored Core - Master of Arena (USA) (Disc 1).cue"
 # Verified as one program on N images (verify_disc_set.py).
 # Disc 1 boots; the rest are data. The runtime builds its disc
 # roster from this list and mounts the SELECTED one (remembered
@@ -14,6 +15,10 @@ exe = "disc/SLUS_010.30"
 discs = [
     "disc/Armored Core - Master of Arena (USA) (Disc 1).cue",
     "disc/Armored Core - Master of Arena (USA) (Disc 2).cue",
+]
+disc_serials = [
+    "SLUS-01030",
+    "SLUS-01081",
 ]
 load_address = "0x80011000"
 entry_pc = "0x80011D84"
@@ -26,15 +31,18 @@ out_dir = "disc"
 bin_name = "Armored Core - Master of Arena (USA) (Disc 1).bin"
 cue_name = "Armored Core - Master of Arena (USA) (Disc 1).cue"
 boot_exe = "SLUS_010.30"
-known_sizes = [700507920]
+known_sizes = [700507920, 700507920]
 known_md5 = [
   "4d5774c4baa65d6eaf281db59ee8e945",
+  "809f240cfecf2b90ade1322cba61c013",
 ]
 known_sha1 = [
   "96f5fcc9513ca47b19fd44bd72ee51c65a55cd43",
+  "c9ca14a6f25d663b0aec66df096205b9cb1bc3cc",
 ]
 known_crc32 = [
   "446ae06c",
+  "9afeb2c5",
 ]
 
 [recompiler]
